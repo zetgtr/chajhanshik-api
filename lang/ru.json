@@ -1,0 +1,36 @@
+{
+    "Register": "Регистрация",
+    "Name": "Имя",
+    "Email Address": "Email адрес",
+    "Password": "Пароль",
+    "Confirm Password": "Подтвердите пароль",
+    "Login": "Вход",
+    "Forgot Your Password?": "Забыли пароль?",
+    "Already have account?": "У вас есть аккаунт?",
+    "Remember Me": "Запомнить меня",
+    "Admin" : {
+        "Sidebar" : {
+            "Settings" : "Настройки"
+        }
+    },
+    "Not a member?": "Не зарегестрированы?",
+    "Forgot It?": "Зарегестрированы?",
+    "Sign UP": "Зарегестрироватся",
+    "Sign In": "Войти",
+    "Login with Social": "Войти через",
+    "Submit": "Подтвердить",
+    "Forgot text" : "Введите адрес электронной почты, зарегистрированной в вашем аккаунте",
+    "Forgot title" : "Забыли пароль",
+    "Send me Back": "Вернутся назад",
+    "Search": "Поиск",
+    "Entry": "Запись",
+    "Roles": "Роль",
+    "Date": "Дата регистрации",
+    "Photo": "Фото",
+    "Actions": "Действие",
+    "Date create": "Дата создания",
+    "Add role": "Добавить роль",
+    "Save":"Сохранить",
+    "Regards": "С уважением",
+    "Hello!": "Привет!"
+}

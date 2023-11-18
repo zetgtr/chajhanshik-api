@@ -1,0 +1,67 @@
+.irs--wrap {
+    padding: 10px 1rem;
+    padding-top: 2.1rem;
+
+    .span {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;
+        color: var(--c-grey);
+        letter-spacing: 0.05em;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.irs--round .irs-bar {
+    background-color: var(--c-primary);
+}
+
+.irs--round .irs-handle {
+    border-color: var(--c-primary);
+    cursor: pointer;
+    box-shadow: none;
+    border-width: 1px;
+    transition: background-color 0.4s linear;
+    width: 1.1rem;
+    height: 1.1rem;
+    top: 1.55rem;
+}
+
+.irs--round .irs-handle {
+    border-color: var(--c-primary);
+    cursor: pointer;
+    box-shadow: none;
+    border-width: 1px;
+    transition: background-color 0.4s linear;
+    width: 1.1rem;
+    height: 1.1rem;
+    top: 1.55rem;
+}
+
+.irs--round .irs-to,
+.irs--round .irs-from,
+.irs--round .irs-single {
+    font-size: 0.9rem;
+    background-color: var(--c-primary);
+}
+
+.irs--round .irs-to::before,
+.irs--round .irs-from::before,
+.irs--round .irs-single::before {
+    border-top-color: var(--c-primary);
+}
+
+.range-filter {
+    // border: 1px solid #eeeeee;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.container-price {
+    grid-area: 3/span 2;
+    position: relative;
+
+}

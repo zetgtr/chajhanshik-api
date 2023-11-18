@@ -1,0 +1,21 @@
+@mixin font-face-woff2($font-family, $url, $weight, $style) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url("../../../../resources/assets/fonts/#{$font-family}/#{$url}.woff2")
+            format("woff2");
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: $style;
+    }
+}
+
+@mixin font-face-ttf($font-family, $url, $weight, $style) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url("../../../../resources/fonts/#{$font-family}/#{$url}.ttf")
+            format("ttf");
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: $style;
+    }
+}

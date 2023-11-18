@@ -1,0 +1,16 @@
+@include font-face("Mont", "Mont-Thin", 100, normal);
+@include font-face("Mont", "Mont-ExtraLight", 200, normal);
+@include font-face("Mont", "Mont-Light", 300, normal);
+@include font-face("Mont", "Mont-Regular", 400, normal);
+@include font-face("Mont", "Mont-SemiBold", 600, normal);
+@include font-face("Mont", "Mont-Bold", 700, normal);
+@include font-face("Mont", "Mont-Black", 800, normal);
+@include font-face("Mont", "Mont-ExtraLightItalic", 200, italic);
+@include font-face("Mont", "Mont-BlackItalic", 900, italic);
+@include font-face("Mont", "Mont-BoldItalic", 700, italic);
+
+@include font-face-woff2("FuturaPT", "FuturaPT-Book", 400, normal);
+@include font-face-woff2("FuturaPT", "FuturaPT-Demi", 500, normal);
+@include font-face-woff2("FuturaPT", "FuturaPT-Bold", 700, normal);
+
+@include font-face-ttf("Ubuntu", "Ubuntu-Bold", 700, normal);

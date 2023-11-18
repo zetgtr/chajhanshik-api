@@ -1,0 +1,41 @@
+.breadcrumbs {
+    font-size: 15px;
+    color: var(--hex-gray);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    line-height: 1.2;
+   
+    >a {
+        // max-width: 240px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+    }
+
+    >a,
+    >span {
+        padding: 0.355em 0.711em;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    >span {
+        color: var(--hex-accent);
+    }
+
+    pre {
+        margin: 0 5px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 12px;
+        & > span,
+        & > a{
+            font-size: 12px;
+        }
+    }
+}

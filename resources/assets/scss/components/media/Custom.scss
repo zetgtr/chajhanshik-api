@@ -1,0 +1,30 @@
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 calc(var(--container-offset)) 0 var(--container-offset);
+        max-width: var(--container-width);
+    }
+
+}
+
+@media (max-width: 1600px) {
+    :root{
+        --content-width : 1300px;
+    }
+
+    .first__wrapper {
+        padding: 0 5rem;
+    }
+
+    .porfolio {
+        // padding: 70px 0;
+    }
+    .contact-info__item-address{
+        .worktime{
+            margin-top: auto;
+        }
+        .address p{
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+  --animate-delay: 2s;
+  --content-width: 1480px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --fz: 20px;
+  --fz-xxl: 2.4rem;
+  --fz-xl: 1.5rem;
+  --fz-l: 1.20rem;
+  --fz-m: 1rem;
+  --fz-s: 0.9rem;
+  --fz-xs: 0.8rem;
+  --fz-xxs: 0.75rem;
+  /*15px*/
+  --offset-xxl: 6rem;
+  --offset-xl: 4.5rem;
+  --offset-l: 3.5rem;
+  --offset-m: 3rem;
+  --offset-s: 2.75rem;
+  --offset-xs: 2.5rem;
+  --c-primary: #ef7f1a;
+  --c-dprimary: #c11f3f;
+  --c-secondary: #00779f;
+  --c-lsecondary: #00ade1;
+  --c-white: #fff;
+  --c-silver: #cccccc;
+  --c-grey: #555555;
+  --c-def: #808080;
+  --c-title: #252627;
+  --h-header: 100px;
+  --c-bg: #eaf5f9;
+}
+/*# sourceMappingURL=vars.css.map */

@@ -1,0 +1,312 @@
+
+.detached {
+    display: inline-block;
+    label {
+        margin-left: 50px;
+        margin-bottom: 0px;
+    }
+    input {
+        display: none;
+        &:checked+label {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+    }
+
+}
+.detachedVue {
+    display: inline-block;
+    label {
+        margin-left: 50px;
+        margin-bottom: 0px;
+    }
+    input {
+        display: none;
+        &:checked+label {
+            color: #fff;
+            background-color: red;
+            border-color: red;
+        }
+    }
+
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+#loading {
+    display: none;
+    position: absolute;
+    height: 100%;
+    background: black;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.7;
+    justify-content: center;
+    padding-top: 250px;
+    .logo{
+        height: 80px;
+        width: 80px;
+        background-image: url("/assets/images/panel/loading.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: rotate  1s infinite linear;
+    }
+}
+.addPhotoHover {
+    opacity: 0;
+    background-image: url("/assets/images/panel/addImg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    transition: 0.4s;
+}
+.addPhotoHover:hover{
+    opacity: 0.7;
+}
+#messages{
+    position: fixed;
+    right: 20px;
+    z-index: 5;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .message{
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        margin-bottom: 5px;
+        div{
+            background-color: #04ff0038;
+            color: white;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            border: solid 1px #b7b7b7;
+            border-radius: 4px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            min-width: 250px;
+            padding: 15px;
+            background-image: url('/assets/images/panel/simple-dashed.png');
+        }
+    }
+
+}
+
+.open_menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    color: black;
+    margin-left: 10px;
+    &[data_toggle = check]{
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+    &:hover {
+        color: #4285f4;
+        transition: 0.3s;
+    }
+    &:before {
+        font-family: "Font Awesome 5 Pro";
+        content: '\f104';
+        font-weight: bold;
+    }
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+.remove{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ea4335;
+    margin-left: 10px;
+    &::before {
+    content: "\f2ed";
+    font-family: "Font Awesome 5 Pro";
+    }
+}
+.menu_table{
+    display: flex;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.4s;
+    &[data_toggle = check]{
+        width: 230px;
+    }
+    .delete_R {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        position: relative;
+        margin-left: 10px;
+        &:hover {
+            &:after {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: #ff5a5a;
+            height: 2px;
+            width: 0%;
+            margin-left: 50%;
+            left: 0px;
+            bottom: 4px;
+            transition: 0.5s;
+        }
+        &:before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f2ed';
+            font-weight: bold;
+            color: #ff5a5a;
+
+        }
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+    .left {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        &:hover {
+            color: #4285f4;
+            &:after {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: #4285f4;
+            height: 2px;
+            width: 0%;
+            margin-left: 50%;
+            left: 0px;
+            bottom: 4px;
+            transition: 0.5s;
+        }
+        &:before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f060';
+            font-weight: bold;
+        }
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+    .right {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transform: rotate(180deg);
+        transition: 0.2s;
+        position: relative;
+        &:hover {
+            color: #4285f4;
+            &:after {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: #4285f4;
+            height: 2px;
+            width: 0%;
+            margin-left: 50%;
+            left: 0px;
+            top: 4px;
+            transition: 0.5s;
+        }
+        &:before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f060';
+            font-weight: bold;
+        }
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+    .key {
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        position: relative;
+        margin-left: 10px;
+        &:hover {
+            color: #4285f4;
+            &:after {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: #4285f4;
+            height: 2px;
+            width: 0%;
+            margin-left: 50%;
+            left: 0px;
+            bottom: 4px;
+            transition: 0.5s;
+        }
+        &:before {
+            font-family: "Font Awesome 5 Pro";
+            content: '\f084';
+            font-weight: bold;
+        }
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.newElement{
+    box-shadow: 0px 0px 5px 0px black;
+    transform: scale(0.97);
+    z-index: 10;
+}
+.newElement_{
+    box-shadow: 0px 0px 0px 0px black;
+    transform: scale(1);
+    z-index: 10;
+}
+.newElement__{
+    transition: 0.2s;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

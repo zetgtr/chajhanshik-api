@@ -1,0 +1,9 @@
+.innerLayout{
+    .header{
+        background: var(--c-bg);
+        background: transparent;
+        &.header_fix{
+            background: var(--c-bg);
+        }
+    }
+}

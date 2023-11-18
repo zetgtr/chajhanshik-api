@@ -1,0 +1,24 @@
+// Стили панелей на главной
+@import "./header.scss";
+@import "./intro.scss";
+@import "./about.scss";
+@import "./footer.scss";
+
+// Стили панелей на внутренней
+@import "./inner.scss";
+
+// Сервисные стили
+@import "./e404.scss";
+@import "./breadcrumbs.scss";
+@import "./burger.scss";
+@import "./button.scss";
+@import "./_modal.scss";
+@import "./irs.scss";
+
+// Адаптив стили
+@import "./media/Custom.scss";
+@import "./media/XX-Large.scss";
+@import "./media/X-Large.scss";
+@import "./media/Large.scss";
+@import "./media/Medium.scss";
+@import "./media/Small.scss";

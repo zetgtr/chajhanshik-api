@@ -1,0 +1,30 @@
+.header-panel{
+    border-top: solid 1px #d9d9d9;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.open_menu:hover {
+    color: #4285f4;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.open_menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: black;
+}
+.open_menu:before {
+    font-family: "Font Awesome 5 Pro";
+    content: '\f104';
+    font-weight: bold;
+}
+
+.tox-silver-sink{
+    z-index: 9999999!important;
+}
