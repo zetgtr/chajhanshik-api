@@ -1,6 +1,6 @@
 import { message } from "../../utils/message.js";
 import CartDelivery from "./cart_delivery.js";
-class Cart {
+export class Cart {
     constructor() {
         this.countIcon = document.querySelector('.cart__total-count');
         this.cart = [];
