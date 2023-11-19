@@ -72,8 +72,11 @@
 <!-- PAGE -->
 <div class="page">
     <div class="page-main">
-        <x-admin.header.header />
-        <x-admin.menu.index></x-admin.menu.index>
+        @if(Auth::user()->role->id == 1)
+            <x-admin.header.header />
+            <x-admin.menu.index></x-admin.menu.index>
+        @endif
+
         <div class="main-content app-content mt-0">
             <div class="side-app">
 

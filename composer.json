@@ -9,29 +9,30 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "axp-dev\/ya-metrika": "^2.2",
-        "composer\/installers": "*",
-        "graham-campbell\/gitlab": "^7.0",
-        "guzzlehttp\/guzzle": "^7.2",
-        "inertiajs\/inertia-laravel": "^0.6.9",
-        "intervention\/image": "^2.7",
-        "kreait\/laravel-firebase": "^5.2",
-        "laravel\/fortify": "^1.16",
-        "laravel\/framework": "^10.6.1",
-        "laravel\/helpers": "^1.6",
-        "laravel\/sanctum": "^3.2",
-        "laravel\/socialite": "^5.6",
-        "laravel\/tinker": "^2.8",
-        "laravelcollective\/html": "^6.4",
-        "league\/flysystem-aws-s3-v3": "^3.0",
-        "socialiteproviders\/github": "^4.1",
-        "socialiteproviders\/google": "^4.1",
-        "socialiteproviders\/vkontakte": "^5.0",
-        "spatie\/laravel-sitemap": "^6.3",
-        "symfony\/http-client": "*",
-        "symfony\/mailgun-mailer": "*",
-        "tightenco\/ziggy": "^1.6",
-        "unisharp\/laravel-filemanager": "^2.6"
+        "axp-dev/ya-metrika": "^2.2",
+        "composer/installers": "*",
+        "graham-campbell/gitlab": "^7.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "inertiajs/inertia-laravel": "^0.6.9",
+        "intervention/image": "^2.7",
+        "kreait/laravel-firebase": "^5.2",
+        "laravel/fortify": "^1.16",
+        "laravel/framework": "^10.6.1",
+        "laravel/helpers": "^1.6",
+        "laravel/sanctum": "^3.2",
+        "laravel/socialite": "^5.6",
+        "laravel/tinker": "^2.8",
+        "laravelcollective/html": "^6.4",
+        "league/flysystem-aws-s3-v3": "^3.0",
+        "socialiteproviders/github": "^4.1",
+        "socialiteproviders/google": "^4.1",
+        "socialiteproviders/vkontakte": "^5.0",
+        "spatie/laravel-sitemap": "^6.3",
+        "symfony/http-client": "*",
+        "symfony/mailgun-mailer": "*",
+        "tightenco/ziggy": "^1.6",
+        "unisharp/laravel-filemanager": "^2.6",
+        "zetgtr/catalog": "^1.1"
     },
     "require-dev": {
         "barryvdh\/laravel-debugbar": "^3.8",
@@ -89,5 +90,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https:\/\/gitlab.com\/zetgtr\/catalog"
+        }
+    ]
 }

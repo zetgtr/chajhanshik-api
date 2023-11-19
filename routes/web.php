@@ -15,6 +15,8 @@ use App\Http\Controllers\Front\RouterController;
 use App\Models\Admin\Menu;
 use App\QueryBuilder\Admin\Page\PageBuilder;
 use App\Utils\Lfm;
+use Catalog\Http\Controllers\CatalogCategoryController;
+use Catalog\Http\Controllers\CatalogOrderController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PhotoGalley\PhotoGalleryController;
@@ -35,7 +37,7 @@ use App\Http\Controllers\Admin\PhotoGalley\PhotoGalleryController;
 
 Route::middleware('auth')->group(function () {
     Route::group([ 'as'=>'admin.', 'middleware' => 'is_admin'],static function(){
-        Route::get("/", [AdminController::class,'index'])
+        Route::get("/", [CatalogOrderController::class,'index'])
             ->name('index');
 //        Route::get('user', )
         Route::group(['prefix' => 'settings', 'as' => 'settings.'], static function(){

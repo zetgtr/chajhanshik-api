@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ce65128baab7e3625d46b01b4adbb2b",
+    "content-hash": "9f88ff6467437e4a0b0e10f427ded8d5",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -10267,6 +10267,67 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "zetgtr/catalog",
+            "version": "1.1.44",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/zetgtr/catalog.git",
+                "reference": "648d7f4035ab97061ed7efa9129c0de8b1edd709"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/zetgtr%2Fcatalog/repository/archive.zip?sha=648d7f4035ab97061ed7efa9129c0de8b1edd709",
+                "reference": "648d7f4035ab97061ed7efa9129c0de8b1edd709",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Catalog\\Providers\\CatalogServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Catalog\\": "src/",
+                    "Catalog\\Seeders\\": "database/seeders/",
+                    "Catalog\\Remove\\": "remove"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Catalog\\Test\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artem",
+                    "email": "artem.kudrin70@gmail.com"
+                }
+            ],
+            "description": "My package description",
+            "keywords": [
+                "laravel",
+                "package"
+            ],
+            "support": {
+                "source": "https://gitlab.com/zetgtr/catalog/-/tree/1.1.44"
+            },
+            "time": "2023-11-17T12:19:13+00:00"
         }
     ],
     "packages-dev": [
