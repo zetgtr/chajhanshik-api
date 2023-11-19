@@ -1,6 +1,6 @@
 import {
     Cart
-} from "../cart/cart.js";
+} from "./cart/cart.js";
 class Filter {
     constructor() {
         this.range = {};
