@@ -77,7 +77,7 @@
             <x-admin.menu.index></x-admin.menu.index>
         @endif
 
-        <div class="main-content app-content mt-0">
+        <div class="main-content app-content mt-0" style="@if(Auth::user()->role->id != 1) margin-left: 0px; @endif">
             <div class="side-app">
 
                 <!-- CONTAINER -->
