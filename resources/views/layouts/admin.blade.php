@@ -95,10 +95,12 @@
         </div>
         <!-- Sidebar-right -->
         <!--/Sidebar-right-->
-        <x-admin.sitebar.index></x-admin.sitebar.index>
-        <!-- Country-selector modal-->
+            @if(Auth::user()->role->id == 1)
+                <x-admin.sitebar.index></x-admin.sitebar.index>
+                <!-- Country-selector modal-->
 
-        <x-admin.menu.menu></x-admin.menu.menu>
+                <x-admin.menu.menu></x-admin.menu.menu>
+            @endif
         <!-- Country-selector modal-->
 
         <!-- FOOTER -->
